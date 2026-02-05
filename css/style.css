@@ -1,0 +1,32 @@
+
+:root{
+--bg:#050914;
+--glass:rgba(255,255,255,0.08);
+--accent:#38bdf8;
+--text:#e5e7eb;
+}
+body{
+margin:0;font-family:Inter,Arial;
+background:var(--bg);color:var(--text);
+}
+.glass{
+background:var(--glass);
+backdrop-filter:blur(14px);
+border-radius:18px;
+}
+.navbar{
+display:flex;justify-content:space-between;
+padding:1rem 2rem;
+}
+.logo span{color:var(--accent)}
+.hero{
+min-height:70vh;display:flex;
+flex-direction:column;justify-content:center;
+align-items:center;text-align:center;
+}
+.cards{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:1.5rem;padding:2rem;
+}
+.card{padding:2rem;text-align:center}
+footer{text-align:center;padding:2rem;opacity:.7}
